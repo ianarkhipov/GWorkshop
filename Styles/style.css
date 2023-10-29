@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+
+}
+
+@font-face {
+    font-family: 'Srbija Sans';
+    src: url("../Fonts/Srbija Sans.ttf");
+}
+
+@font-face {
+    font-family: 'Geologica';
+    src: url("../Fonts/Geologica-ExtraLight.ttf");
+}
+
+h3 {
+    font-family: 'Srbija Sans', sans-serif;
+    font-size: 44px;
+    line-height: 57px;
+}
+
+h2 {
+    font-family: 'Srbija Sans', sans-serif;
+    font-size: 80px;
+    line-height: 80px;
+    text-transform: lowercase;
+}
+
+p {
+    font-family: 'Geologica', sans-serif;
+    font-size: 24px;
+    line-height: 31px;
+}
+
+span {
+    font-family: 'Geologica', sans-serif;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.main {
+    background-color: #FBFAF8;
+    font-family: 'Srbija Sans', 'Srbija Sans', sans-serif;
+
+}
+
+.header {
+    background-color: #FBFAF8;
+    position: fixed;
+}
+
+.container {
+    margin: 0 auto;
+    padding-left: 108px;
+    padding-right: 108px;
+}
+
+.Join-us {
+    background: #000;
+    border-radius: 8px;
+    width: 183px;
+    height: 36px;
+    box-sizing: border-box;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+    font-family: 'Srbija Sans', sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    color: #FFF;
+    text-transform: uppercase;
+}
+
+.Join-us:hover {
+    background: #F00;
+}
+
+.main-content {
+    overflow: hidden;
+    background-image: url("../images/Hands-instruments.png");
+    background-position: top center;
+    height: 944px;
+}
+
+.header {
+    padding: 44px 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    vertical-align: bottom;
+}
+
+.logo {
+    margin-right: 325px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.menu-item {
+    font-family: 'Geologica', sans-serif;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.menu-item:nth-child(-n+3) {
+    margin-right: 32px;
+}
+
+.menu-item:nth-child(4) {
+    margin-right: 24px;
+}
+
+.menu-item a {
+    font-size: 20px;
+    line-height: 24px;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.menu-item a:hover {
+    border-bottom: 2px solid #F00;
+}
+
+.main-titling {
+    padding-top: 132px;
+    max-width: 704px;
+}
+
+.main-title {
+    font-family: 'Srbija Sans', sans-serif;
+    font-size: 110px;
+}
+
+.main-content .container {
+    height: 944px;
+}
+
+.statistics {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 204px) 288px;
+    gap: 104px;
+
+}
+
+.about-us {
+    background-color: #0E0E10;
+    color: #FBFAF8;
+    padding-bottom: 44px;
+}
+
+.about-us-container {
+    padding-top: 91px;
+    display: grid;
+    grid-template-columns: repeat(2, 611px);
+    gap: 0;
+    margin-bottom: 56px;
+}
+
+.we-are-here {
+    margin-top: 80px;
+}
+
+.map {
+    margin-top: 34px;
+    margin-bottom: 120px;
+}
+
+.partners {
+    background-color: #0E0E10;
+    color: #FBFAF8;
+    display: grid;
+    grid-template-columns: repeat(4, 288px);
+    gap: 24px;
+
+}
+
+.partner {
+    padding-top: 80px;
+    width: 288px;
+    height: 100px;
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 80px;
+}
+
+footer {
+    padding-top: 80px;
+    background-color: #0E0E10;
+    color: #FBFAF8;
+    padding-bottom: 50px;
+}
+
+.footer-line-1 {
+    height: 65px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.footer-line-2 {
+    height: 65px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.p-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.links {
+    float: right;
+    font-family: 'Geologica', sans-serif;
+    font-size: 18px;
+    line-height: 19px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #FBFAF8;
+}
+
+.right a {
+    text-decoration: none;
+    color:  #FF0000;
+}
+
+.right {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.red {
+    font-size: 16px;
+    line-height: 24px;
+    color: #F00;
+}
+
+.right:nth-child(1) {
+    margin-right: 24px;
+}
+
