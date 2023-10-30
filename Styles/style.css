@@ -26,6 +26,10 @@ h2 {
     text-transform: lowercase;
 }
 
+h1 {
+    text-transform: uppercase;
+}
+
 p {
     font-family: 'Geologica', sans-serif;
     font-size: 24px;
@@ -47,12 +51,14 @@ span {
 .header {
     background-color: #FBFAF8;
     position: fixed;
+    z-index: 2;
 }
 
 .container {
     margin: 0 auto;
     padding-left: 108px;
     padding-right: 108px;
+
 }
 
 .Join-us {
@@ -80,11 +86,64 @@ span {
 }
 
 .main-content {
+    padding-top: 80px;
     overflow: hidden;
     background-image: url("../images/Hands-instruments.png");
-    background-position: top center;
+    background-position-x: center;
+    background-position-y: 80px;
+    background-repeat: no-repeat;
     height: 944px;
 }
+
+
+
+.guitarrepair-main-content {
+    overflow: hidden;
+    height: 654px;
+    background-color: #FBFAF8;;
+}
+
+
+.guitarrepair-main-content .container {
+    padding-top: 80px;
+    position: relative;
+    overflow: hidden;
+    height: 654px;
+}
+
+.grepair-red-guitar {
+    position: absolute;
+    top: 13px;
+    left: calc(100% - 900px);
+    z-index: 0;
+}
+
+.contact-us-main {
+    padding-top: 100px;
+    background-color: #4E4848;
+    height: 915px;
+}
+
+.contact-us-title {
+    padding-top: 121px;
+    color: #FFF;
+}
+
+.contact-us-link {
+    font-family: 'Geologica', sans-serif;
+    font-size: 32px;
+    line-height: 35px;
+    letter-spacing: -0.32px;
+    color: #FFF;
+}
+
+.contact-us-address {
+    font-size: 24px;
+    line-height: 24px;
+    margin-top: 56px;
+    color: #FFF;
+}
+
 
 .header {
     padding: 44px 0;
@@ -96,13 +155,26 @@ span {
     align-items: center;
 }
 
+.service-card p {
+    text-transform: uppercase;
+    margin-top: 24px;
+    font-family: 'Srbija Sans', sans-serif;
+}
+
+.types-of-service {
+    padding-top: 91px;
+
+}
+
 .logo img {
     vertical-align: bottom;
 }
 
 .logo {
-    margin-right: 325px;
+    margin-right: 295px;
 }
+
+
 
 .menu {
     display: flex;
@@ -144,12 +216,19 @@ span {
 
 .main-titling {
     padding-top: 132px;
-    max-width: 704px;
+    /*max-width: 704px;*/
 }
 
 .main-title {
     font-family: 'Srbija Sans', sans-serif;
     font-size: 110px;
+    white-space: pre-wrap;
+    width: 750px;
+}
+
+.main-titling p {
+    white-space: pre-wrap;
+    width: 450px;
 }
 
 .main-content .container {
@@ -179,13 +258,43 @@ span {
     margin-bottom: 56px;
 }
 
+.services-container {
+    padding-top: 68px;
+    display: grid;
+    grid-template-columns: repeat(2, 599px);
+    gap: 24px;
+    margin-bottom: 56px;
+    justify-self: center;
+}
+
+.contact-us-container {
+    padding-top: 64px;
+    display: grid;
+    grid-template-columns: repeat(2, 598px);
+    gap: 24px;
+    margin-bottom: 56px;
+    justify-self: center;
+}
+
+.contact-card1 {
+
+}
+
+.contact-card2 {
+
+}
+
+
 .we-are-here {
-    margin-top: 80px;
+    padding-top: 80px;
+    background-color: #FBFAF8;
+    padding-bottom: 34px;
 }
 
 .map {
     margin-top: 34px;
     margin-bottom: 120px;
+    background-color: #FBFAF8;
 }
 
 .partners {
@@ -268,3 +377,113 @@ footer {
     margin-right: 24px;
 }
 
+
+.order-text {
+    font-size: 24px;
+    line-height: 29px;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.order-form {
+    display: grid;
+    gap: 20px;
+    grid-template-rows: repeat(4, 65px);
+    justify-content: center;
+    width: 424px;
+    height: 555px;
+    margin-bottom: 20px;
+
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 344px;
+    height: 62px;
+    border: 0;
+    outline: none;
+    border-radius: 8px;
+    background: linear-gradient(95.61deg, #DA8023 0%, #E2B438 100%);
+    padding: 4px 4px;
+    position: relative;
+
+}
+
+.order-form input {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-self: center;
+    width: 320px;
+    height: 60px;
+    background: #211A16;
+    border: transparent;
+    border-radius: 8px;
+    position: relative;
+    left: 2px;
+    right: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Gilroy', sans-serif;
+    font-size: 16px;
+    line-height: 140%;
+    color: white;
+}
+
+.order-form input::placeholder {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 16px;
+    line-height: 140%;
+    color: #757575;
+    text-indent: 10px;
+    position: absolute;
+    opacity: 0
+}
+
+.holder {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 16px;
+    line-height: 140%;
+    color: #757575;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translateX(10px);
+    transition: all 2s ease;
+    pointer-events: none;
+}
+
+.order-form input:focus + .holder {
+    margin-top: -30px;
+    font-size: 12px;
+}
+
+.order-form input:not(:placeholder-shown) + .holder {
+    margin-top: -30px;
+    font-size: 12px;
+}
+
+.order-button {
+    background: linear-gradient(95.61deg, #DA8023 0%, #E2B438 100%);
+    border-radius: 8px;
+    width: 344px;
+    height: 62px;
+    box-sizing: border-box;
+    padding: 19px 50px;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+    font-size: 18px;
+    color: #191411;
+    margin-top: 0px;
+}
+
+.order-button:hover {
+    background: linear-gradient(95.61deg, #AC6115 0%, #9E7A19 100%);
+}
