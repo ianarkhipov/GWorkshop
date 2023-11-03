@@ -13,6 +13,14 @@
     src: url("../Fonts/Geologica-ExtraLight.ttf");
 }
 
+h4 {
+
+    font-family: 'Srbija Sans', sans-serif;
+    font-size: 32px;
+    line-height: 35;
+    text-transform: uppercase;
+}
+
 h3 {
     font-family: 'Srbija Sans', sans-serif;
     font-size: 44px;
@@ -36,6 +44,36 @@ p {
     line-height: 31px;
 }
 
+.small-info {
+    background: #000;
+    border-radius: 10px;
+    padding: 10px 16px;
+    display: inline-flex;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 32px;
+    margin-left: 56px;
+}
+
+.inlay-title {
+    font-family: 'Srbija Sans', sans-serif;
+    font-size: 32px;
+    line-height: 35px;
+    text-transform: uppercase;
+    margin-top: 34px;
+    margin-left: 56px;
+}
+
+.p-inlay {
+    font-family: 'Geologica', sans-serif;
+    font-size: 22px;
+    line-height: 28px;
+    text-transform: lowercase;
+    max-width: 428px;
+    margin-top: 8px;
+    margin-left: 57px;
+}
+
 span {
     font-family: 'Geologica', sans-serif;
     font-size: 20px;
@@ -52,6 +90,7 @@ span {
     background-color: #FBFAF8;
     position: fixed;
     z-index: 2;
+    padding: 22px 0;
 }
 
 .container {
@@ -118,6 +157,13 @@ span {
     z-index: 0;
 }
 
+.stratoworkshop {
+    position: absolute;
+    top: 100px;
+    left: calc(100% - 760px);
+    z-index: 0;
+}
+
 .contact-us-main {
     padding-top: 100px;
     background-color: #4E4848;
@@ -137,6 +183,11 @@ span {
     color: #FFF;
 }
 
+.contact-us-link a {
+    text-decoration: none;
+    color:  #FFFFFF;
+}
+
 .contact-us-address {
     font-size: 24px;
     line-height: 24px;
@@ -145,20 +196,61 @@ span {
 }
 
 
-.header {
-    padding: 44px 0;
-}
-
 .header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.service-card p {
-    text-transform: uppercase;
-    margin-top: 24px;
-    font-family: 'Srbija Sans', sans-serif;
+
+.event-card p {
+
+}
+
+.events-container {
+    display: grid;
+    grid-template-rows: repeat(2, 288px);
+    gap: 24px;
+    width: 611px;
+}
+
+.event-card {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    background-color: #4E4848;
+    /*display: grid;*/
+    /*grid-template-rows: repeat(2, 288px);*/
+    /*gap: 24px;*/
+    border: 0;
+    border-radius: 20px;
+}
+
+/*.event-card:nth-child(2) {*/
+/*    padding-top: 24px;*/
+/*}*/
+
+.card-inlay {
+    width: 611px;
+}
+
+.card-inlay:nth-child(1) {
+    /*margin-left: 56px;*/
+}
+
+.event-card .event-image {
+    /*margin-left: 14px;*/
+}
+
+.event-image {
+    margin-left: 12px;
+    z-index: 0;
+}
+
+.event-image:hover {
+    background-image: url("../images/hover-price.png");
+    opacity: 0.5;
+    z-index: 1;
 }
 
 .types-of-service {
@@ -231,6 +323,7 @@ span {
     width: 450px;
 }
 
+
 .main-content .container {
     height: 944px;
 }
@@ -267,6 +360,15 @@ span {
     justify-self: center;
 }
 
+.events-container {
+    padding-top: 68px;
+    /*display: grid;*/
+    /*grid-template-columns: repeat(2, 661px);*/
+    /*gap: 0px;*/
+    margin-bottom: 56px;
+    justify-self: center;
+}
+
 .contact-us-container {
     padding-top: 64px;
     display: grid;
@@ -276,13 +378,6 @@ span {
     justify-self: center;
 }
 
-.contact-card1 {
-
-}
-
-.contact-card2 {
-
-}
 
 
 .we-are-here {
@@ -387,103 +482,114 @@ footer {
 
 .order-form {
     display: grid;
-    gap: 20px;
-    grid-template-rows: repeat(4, 65px);
+    gap: 24px;
+    grid-template-rows: repeat(3, 60px) 100px;
     justify-content: center;
-    width: 424px;
+    width: 598px;
     height: 555px;
     margin-bottom: 20px;
 
 }
 
-.input-container {
+.form__group {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    width: 344px;
-    height: 62px;
+    width: 598px;
+    height: 60px;
     border: 0;
     outline: none;
-    border-radius: 8px;
-    background: linear-gradient(95.61deg, #DA8023 0%, #E2B438 100%);
-    padding: 4px 4px;
     position: relative;
 
 }
 
-.order-form input {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    align-self: center;
-    width: 320px;
+.form__group:nth-child(4) {
+    height: 100px;
+}
+
+.form__group:nth-child(4) .input {
+    height: 100px;
+}
+
+.input {
+    font-size: 16px;
+    width: 598px;
     height: 60px;
-    background: #211A16;
-    border: transparent;
-    border-radius: 8px;
-    position: relative;
-    left: 2px;
-    right: 2px;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-family: 'Gilroy', sans-serif;
-    font-size: 16px;
-    line-height: 140%;
-    color: white;
+    border: 0;
+    border-radius: 10px;
+    text-indent: 24px;
+    line-height: 16px;
+    font-family: 'Geologica', sans-serif;
+    color: #0E0E10;
 }
 
-.order-form input::placeholder {
-    font-family: 'Gilroy', sans-serif;
+textarea {
+    text-indent: 24px;
+    padding-top: 24px;
+    margin-top: 24px;
     font-size: 16px;
-    line-height: 140%;
-    color: #757575;
-    text-indent: 10px;
-    position: absolute;
-    opacity: 0
+    line-height: 16px;
+    font-family: 'Geologica', sans-serif;
+    color: #0E0E10;;
 }
 
-.holder {
-    font-family: 'Gilroy', sans-serif;
-    font-size: 16px;
-    line-height: 140%;
-    color: #757575;
+.label {
     position: absolute;
     top: 50%;
-    left: 0%;
-    transform: translateX(10px);
-    transition: all 2s ease;
+    left: 24px;
+    transform: translateY(-50%);
+    /*transition: all ease 2s;*/
     pointer-events: none;
+    font-size: 16px;
+    line-height: 16px;
+    font-family: 'Geologica', sans-serif;
+    color: #313231;
 }
 
-.order-form input:focus + .holder {
-    margin-top: -30px;
-    font-size: 12px;
+.label-textarea {
+    position: absolute;
+    top: 25%;
+    left: 24px;
+    transform: translateY(-50%);
+    /*transition: all ease 2s;*/
+    pointer-events: none;
+    font-size: 16px;
+    line-height: 16px;
+    font-family: 'Geologica', sans-serif;
+    color: #313231;
 }
 
-.order-form input:not(:placeholder-shown) + .holder {
-    margin-top: -30px;
-    font-size: 12px;
+.input::placeholder {
+    opacity: 0;
 }
+
+.input:focus + .label {
+   opacity: 0;
+}
+
+.input:focus + .label-textarea {
+    opacity: 0;
+}
+
+.input:not(:placeholder-shown) + .label {
+   opacity: 0;
+}
+
+.input:not(:placeholder-shown) + .label-textarea {
+    opacity: 0;
+}
+
 
 .order-button {
-    background: linear-gradient(95.61deg, #DA8023 0%, #E2B438 100%);
-    border-radius: 8px;
-    width: 344px;
-    height: 62px;
-    box-sizing: border-box;
-    padding: 19px 50px;
-    gap: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 190px;
+    height: 52px;
+    border-radius: 10px;
+    background: #F00;
     border: 0;
-    cursor: pointer;
-    outline: none;
-    font-size: 18px;
-    color: #191411;
-    margin-top: 0px;
-}
-
-.order-button:hover {
-    background: linear-gradient(95.61deg, #AC6115 0%, #9E7A19 100%);
+    color: #FFF;
+    margin-top: 24px;
+    font-family: 'Srbija Sans', sans-serif;
+    font-size: 28px;
+    line-height: 28px;
+    text-transform: uppercase;
 }
