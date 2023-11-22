@@ -1,7 +1,0 @@
-User-agent: *
-User-agent: Googlebot
-User-agent: YandexBot
-Allow: main-title
-Disallow: h3
-Allow
-
