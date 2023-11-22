@@ -34,9 +34,6 @@ h2 {
     text-transform: lowercase;
 }
 
-h1 {
-    text-transform: uppercase;
-}
 
 p {
     font-family: 'Geologica', sans-serif;
@@ -311,11 +308,13 @@ span {
     /*max-width: 704px;*/
 }
 
-.main-title {
+H1 {
     font-family: 'Srbija Sans', sans-serif;
-    font-size: 110px;
+    font-size: 109px;
     white-space: pre-wrap;
     width: 750px;
+    text-transform: uppercase;
+    letter-spacing: -0.1rem;
 }
 
 .main-titling p {
